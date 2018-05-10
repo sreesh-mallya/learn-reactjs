@@ -1,0 +1,21 @@
+<style>
+    .box--small {
+        width: 60px;
+        height: 60px;
+        font-family: monospace;
+    }
+</style>
+<div id="root"></div>
+<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script crossorigin src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+
+<script type="text/babel">
+    const rootElement = document.getElementById('root');
+    const element = (
+        <div>
+            <div className="box--small" style={{paddingLeft: 20}}>box</div>
+        </div>
+    );
+    ReactDOM.render(element, rootElement);
+</script>
